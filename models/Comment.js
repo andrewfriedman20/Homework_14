@@ -21,15 +21,12 @@ Comment.init(
     comment_content: {
       type: DataTypes.STRING,
       allowNull: false,
-            validate: {
-            len[1],
-    },
+           
 
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      validate: {
-        len[1]},
+     
       references: {
         key: 'id',
         model:'user'
