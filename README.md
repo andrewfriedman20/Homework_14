@@ -1,5 +1,7 @@
 # 14 Model-View-Controller (MVC): Tech Blog
 [Link to deployed Heroku app.](https://techtalk2021.herokuapp.com/)
+
+
 [Link to Github Repo.](https://github.com/andrewfriedman20/Homework_14)
 ## Your Task
 
