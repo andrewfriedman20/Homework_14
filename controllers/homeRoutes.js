@@ -1,3 +1,4 @@
+const seqelize = require('../config/connection');
 const router = require('express').Router();
 const { User } = require('../models');
 const withAuth = require('../utils/auth');
@@ -27,6 +28,15 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+router.get('/signup', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+
+    res.render('signup');
 });
 
 module.exports = router;
